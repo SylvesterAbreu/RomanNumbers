@@ -15,4 +15,11 @@ public class RomanNumbersTest {
 
         assertThat(romanNumber.getRomanNumberFor(1), is(equalTo("I")));
     }
+
+    @Test
+    public void whenPassingIntegerTwo_returnII() throws Exception {
+        final RomanNumber romanNumber = new RomanNumber();
+
+        assertThat(romanNumber.getRomanNumberFor(2), is(equalTo("II")));
+    }
 }
