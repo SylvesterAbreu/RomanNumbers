@@ -22,4 +22,11 @@ public class RomanNumbersTest {
 
         assertThat(romanNumber.getRomanNumberFor(2), is(equalTo("II")));
     }
+
+    @Test
+    public void whenPassingIntegerThree_returnIII() throws Exception {
+        final RomanNumber romanNumber = new RomanNumber();
+
+        assertThat(romanNumber.getRomanNumberFor(3), is(equalTo("III")));
+    }
 }
