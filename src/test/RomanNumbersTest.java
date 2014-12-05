@@ -29,4 +29,11 @@ public class RomanNumbersTest {
 
         assertThat(romanNumber.getRomanNumberFor(3), is(equalTo("III")));
     }
+
+    @Test
+    public void whenPassingIntegerFour_returnIV() throws Exception {
+        final  RomanNumber romanNumber = new RomanNumber();
+
+        assertThat(romanNumber.getRomanNumberFor(4), is(equalTo("IV")));
+    }
 }

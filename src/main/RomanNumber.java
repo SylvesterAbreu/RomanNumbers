@@ -5,7 +5,8 @@ public class RomanNumber {
         switch (i){
             case 1: return "I";
             case 2: return "II";
-            default: return "III";
+            case 3: return "III";
+            default:return "IV";
         }
     }
 }
