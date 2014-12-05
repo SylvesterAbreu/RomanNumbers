@@ -43,4 +43,11 @@ public class RomanNumbersTest {
 
         assertThat(romanNumber.getRomanNumberFor(5), is(equalTo("V")));
     }
+
+    @Test
+    public void whenPassingIntegerSix_returnVI() throws Exception {
+        final RomanNumber romanNumber = new RomanNumber();
+
+        assertThat(romanNumber.getRomanNumberFor(6), is(equalTo("VI")));
+    }
 }
