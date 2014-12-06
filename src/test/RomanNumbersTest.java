@@ -50,4 +50,11 @@ public class RomanNumbersTest {
 
         assertThat(romanNumber.getRomanNumberFor(6), is(equalTo("VI")));
     }
+
+    @Test
+    public void whenPassingIntegerSeven_returnVII() throws Exception {
+        final RomanNumber romanNumber = new RomanNumber();
+
+        assertThat(romanNumber.getRomanNumberFor(7), is(equalTo("VII")));
+    }
 }
