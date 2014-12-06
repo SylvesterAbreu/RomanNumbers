@@ -9,6 +9,7 @@ public class RomanNumber {
     public static final String IV = I + V;
     public static final String VI = V + I;
     public static final String VII = V + II;
+    public static final String VIII = V + III;
 
     public String getRomanNumberFor(int i) {
         switch (i) {
@@ -24,8 +25,10 @@ public class RomanNumber {
                 return V;
             case 6:
                 return VI;
-            default:
+            case 7:
                 return VII;
+            default:
+                return VIII;
         }
     }
 }

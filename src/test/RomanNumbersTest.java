@@ -57,4 +57,11 @@ public class RomanNumbersTest {
 
         assertThat(romanNumber.getRomanNumberFor(7), is(equalTo("VII")));
     }
+
+    @Test
+    public void whenPassingIntegerEight_returnVIII() throws Exception {
+        final RomanNumber romanNumber = new RomanNumber();
+
+        assertThat(romanNumber.getRomanNumberFor(8), is(equalTo("VIII")));
+    }
 }
