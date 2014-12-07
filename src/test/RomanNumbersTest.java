@@ -71,4 +71,11 @@ public class RomanNumbersTest {
 
         assertThat(romanNumber.getRomanNumberFor(9), is(equalTo("IX")));
     }
+
+    @Test
+    public void whenPassingIntegerTen_returnX() throws Exception {
+        final RomanNumber romanNumber = new RomanNumber();
+
+        assertThat(romanNumber.getRomanNumberFor(10), is(equalTo("X")));
+    }
 }

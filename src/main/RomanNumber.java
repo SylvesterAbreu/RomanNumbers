@@ -30,8 +30,10 @@ public class RomanNumber {
                 return VII;
             case 8:
                 return VIII;
-            default:
+            case 9:
                 return IX;
+            default:
+                return "X";
         }
     }
 }
