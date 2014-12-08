@@ -14,6 +14,10 @@ public class RomanNumber {
     private static final String IX = I + X;
 
     public String getRomanNumberFor(int i) {
+        return i < 11 ? lessThanEleven(i) : "XI";
+    }
+
+    private String lessThanEleven(int i) {
         switch (i) {
             case 1:
                 return I;
