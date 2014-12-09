@@ -83,6 +83,6 @@ public class RomanNumbersTest {
     public void whenPassingIntegerEleven_returnXI() throws Exception {
         final RomanNumber romanNumber = new RomanNumber();
 
-        assertThat(romanNumber.getRomanNumberFor(10), is(equalTo("X")));
+        assertThat(romanNumber.getRomanNumberFor(11), is(equalTo("XI")));
     }
 }
